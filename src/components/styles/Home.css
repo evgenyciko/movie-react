@@ -1,0 +1,33 @@
+.carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  background-color: #ff0018;
+  border-radius: 100%;
+}
+
+.home-carousel h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.home-carousel p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+.home-carousel p i {
+  color: orange;
+}
