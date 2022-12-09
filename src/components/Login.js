@@ -2,10 +2,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
-import { useNavigate } from "react-router-dom";
-
 function Login() {
-  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       username: "",
