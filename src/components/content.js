@@ -22,8 +22,6 @@ function Content() {
     getData();
   }, []);
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalData, setModalData] = useState(null);
   return (
     <section className="showing mt-5">
       <div className="container">
@@ -41,65 +39,20 @@ function Content() {
                       src={`${urlImage}${item.poster_path}`}
                       alt=""
                     />
-                    <div className="card-inner text-center d-flex flex-column justify-content-center align-items-center">
-                      <p className="text-title">{item.title}</p>
-                      <button
-                        className="card-button btn mt-2 bg-light border-0 rounded-2 text-dark"
-                        onClick={() => {
-                          setModalData(item);
-                          setModalIsOpen(true);
-                        }}
-                      >
-                        Details
-                      </button>
-                    </div>
                   </div>
                   <div className="card-title text-light">
+                    <span className="text-dark">
+                      Popularity: {item.popularity}
+                    </span>
+                    <br />
+                    <span className="text-dark">ID: {item.id}</span>
                     <h1 className="text-dark">{item.title}</h1>
+                    <span className="text-dark">{item.overview}</span>
                   </div>
                 </div>
               </SplideSlide>
             );
           })}
-          <Modal size="md" variant="dark" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-            <div className="modal-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                onClick={() => setModalIsOpen(false)}
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">
-              <h1 className="card-title fs-4 my-2">{modalData.item.title}</h1>
-              <h2 className="fs-6 fw-semibold mt-3">Overview</h2>
-              <p className="card-overview mt-0">{modalData.item.overview}</p>
-              <div className="row">
-                <div className="col-6 text-center">
-                  <p className="fs-6 fw-semibold my-2">Movie ID</p>
-                  <div className="d-inline-flex align-items-center">
-                    <i className="ri-hashtag fs-5 me-2 card-logo bg-dark d-flex align-items-center justify-content-center"></i>
-                    <p className="card-score my-2">{modalData.item.id}</p>
-                  </div>
-                </div>
-                <div className="col-6 text-center">
-                  <p className="fs-6 fw-semibold my-2">Popularity</p>
-                  <div className="d-inline-flex align-items-center">
-                    <i className="ri-star-fill fs-5 me-2 card-logo bg-dark d-flex align-items-center justify-content-center"></i>
-                    <p className="card-score my-2">
-                      {modalData.item.popularity}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-dark">
-                Add to watchlist
-              </button>
-            </div>
-          </Modal>
         </Splide>
       </div>
     </section>
