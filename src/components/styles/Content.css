@@ -1,0 +1,125 @@
+.showing h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.more-details {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: red;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.more-details:hover {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(119, 0, 0);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* card */
+
+.card-title h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card-title p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.card-title p i {
+  color: orange;
+}
+
+.card-header {
+  height: 300px;
+  width: 210px;
+}
+
+.card-header img {
+  height: 300px;
+  width: 210px;
+}
+
+.card-inner {
+  z-index: 3;
+  color: #000;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  width: 210px;
+  height: 300px;
+  padding-top: 80px;
+}
+
+.card-inner:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.card-button {
+  width: 150px;
+  height: 40px;
+}
+
+.text-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: white;
+}
+
+.card-inner .btn:nth-child(2) {
+  background-color: red;
+  transition: 0.3s;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.card-inner .btn:nth-child(2):hover {
+  background-color: rgb(80, 0, 0);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  transition: 0.3s;
+}
+
+.card-inner .btn:nth-child(3) {
+  transition: 0.3s;
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 26px !important;
+}
+
+.card-inner .btn:nth-child(3):hover {
+  background-color: rgb(155, 155, 155) !important;
+  color: black !important;
+  transition: 0.3s !important;
+}
