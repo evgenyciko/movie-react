@@ -1,6 +1,6 @@
 import "./styles/Navbar.css";
 
-function navbar() {
+function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-transparent navbar-dark">
       <div className="container">
@@ -47,10 +47,8 @@ function navbar() {
             <li className="nav-item">
               <a
                 className="btn btn-login"
-                href="/"
+                href="/login"
                 role="button"
-                data-bs-toggle="modal"
-                data-bs-target="#login"
               >
                 Login
               </a>
@@ -62,4 +60,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

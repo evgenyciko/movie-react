@@ -1,5 +1,4 @@
 import "./styles/Content.css";
-import { Modal } from "react-bootstrap";
 import "./styles/splide-core.min.css";
 import "./spildeList.js";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
