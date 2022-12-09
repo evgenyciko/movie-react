@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -48,10 +49,13 @@ function Login() {
                   }
                 )
                 .then((res) => {
-                  const sessionID = res.data.session_id;
-                  console.log(sessionID);
-                  localStorage.setItem("session", sessionID);
-                  navigate("/profile");
+                    const sessionID = res.data.session_id;
+                    // console.log(sessionID);
+                    localStorage.setItem("session", sessionID);
+                    localStorage.setItem("username", values.username)
+                    // navigate('/profile');
+                    // window.location.href = "/profile";
+                    window.location.assign("/");
                 });
             });
         });

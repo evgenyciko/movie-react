@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Login from "./components/Login";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

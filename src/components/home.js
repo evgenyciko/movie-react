@@ -8,7 +8,7 @@ function Home() {
           id="carouselExampleCaptions"
           className="carousel slide"
           data-bs-ride="true"
-        >
+        > 
           <div className="carousel-inner gambar">
             <div className="carousel-item active">
               <img

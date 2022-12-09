@@ -5,6 +5,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Axios from "axios";
 import { useEffect, useState } from "react";
 
+
 function Content() {
   const urlImage = `${process.env.REACT_APP_BASEIMGURL}`;
   const [filem, setFilem] = useState([]);
