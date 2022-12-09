@@ -146,12 +146,8 @@ nav .nav-item a:hover {
   }
 }
 
-/* mobile version */
 
 @media (max-width: 991.98px) {
-  /* .collapse {
-      text-align: center;
-    } */
 
   .navbar {
     background: rgba(11, 12, 23, 0.32);
